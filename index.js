@@ -24,7 +24,7 @@ app.use(offerRoutes);
 
 //message d'erreur en cas d'acces à une route inexistante
 app.all("*", (req, res) => {
-  res.status(400).json({ message: error.message });
+  res.status(200).json({ message: "all routes" });
 });
 
 // Utilisez le port défini dans le fichier .env
